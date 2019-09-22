@@ -1,0 +1,20 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontWeight": "300", // Regular
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "window.zoomLevel": 2,
+  "files.autoSave": "off",
+  "eslint.autoFixOnSave": true,
+  "editor.mouseWheelZoom": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+  ]
+}
