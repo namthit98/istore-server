@@ -2,13 +2,13 @@ import { Request, Response, NextFunction, Application } from 'express'
 
 import logger from '../utils/logger'
 import config from '../config'
-import AuthRoute from './auth.route'
+import TodoRoute from './todo.route'
 
 class Route {
-  private _authRoute: AuthRoute = new AuthRoute()
+  private _todoRoute: TodoRoute = new TodoRoute()
 
   public init(app: Application) {
-    this._authRoute.init(app)
+    this._todoRoute.init(app)
 
     this.handleErrorRoute(app)
   }

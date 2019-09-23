@@ -4,7 +4,7 @@ import { TransformableInfo } from 'logform'
 const { combine, timestamp, printf } = format
 
 const loggerFormat = printf((info: TransformableInfo) => {
-  return `${info.timestamp} | ${info.level}: ${info.message}`
+  return `${info.timestamp} | ${info.level}: ${JSON.stringify(info.message)}`
 })
 
 const logger = createLogger({

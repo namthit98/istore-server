@@ -12,11 +12,13 @@
 		// e.g. "@typescript-eslint/explicit-function-return-type": "off",
 		"@typescript-eslint/no-unused-vars": "off",
 		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/member-delimiter-style": "off",
+		"@typescript-eslint/interface-name-prefix": "off",
 		"semi": [
 			1,
 			"never"
 		],
 		"no-unused-vars": 0,
-		"no-console": 2
+		"no-console": 1
 	}
 }
