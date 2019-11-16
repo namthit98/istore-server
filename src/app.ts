@@ -33,7 +33,7 @@ class App {
   }
 
   private config(): void {
-    this._app.use(express.static(path.join(__dirname, 'public')))
+    this._app.use(express.static(path.join(__dirname, '..', 'public')))
     this._app.use(bodyParser.json())
     this._app.use(bodyParser.urlencoded({ extended: false }))
     this._app.use(cors())
